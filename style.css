@@ -1,0 +1,574 @@
+body{
+    background-color: rgb(0, 94, 255);
+    display: flex;
+    justify-content: center;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 50px #a70b0b;
+    }
+    50% {
+        text-shadow: 0 0 10px #002efd;
+    }
+    100% {
+        text-shadow: 0 0 50px #ffffff;
+    }
+}
+.div {
+    border: solid black 2px;
+}
+
+.mainDiv {
+    height: 95vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.5rem;
+}
+/*tablet size*/
+@media (max-width:1100px) {
+    .mainDiv {
+        width: 95%;
+            }
+}
+/*mobile size*/
+@media (max-width:500px){
+    .mainDiv{
+        width: 96%;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .mainDiv{
+        height: 82vh;
+    }
+}
+
+.upperDiv {
+    height: 50px;
+    width: 90%;
+    top: 5px;
+    background-image: linear-gradient(rgb(163, 183, 255), rgb(7, 50, 151));
+    color: rgb(255, 255, 255);
+    border: rgb(27, 21, 21);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    margin-top: 5px;
+}
+.upperDiv p {
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0;
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .upperDiv{
+       top: 20px;
+    }
+}
+/*mbile size*/
+@media (max-width:500px){
+    .upperDiv{
+        width: 95%;
+        top: 0px;
+    }
+    .upperDiv p{
+        width: 90%;
+        font-size: 1rem;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .upperDiv p {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+.div{
+    border-radius: 20px;
+}
+.leftDiv {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(133, 52, 255);
+    background-image: linear-gradient(rgb(170, 197, 255), rgb(3, 7, 88));
+    border: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top:100px;
+    left: 70px;
+    align-items: center;
+    font-size: 10rem;
+    border-radius: 50%;
+    color: white;
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .leftDiv{
+        height: 300px;
+        width: 300px;
+        font-size: 15rem;
+    }
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .leftDiv{
+        top: 550px;
+        left: 300px;
+        font-size: 12rem;
+        width: 350px;
+        height: 350px;
+    }
+}
+/*mbile size*/
+@media (max-width:500px){
+    .leftDiv {
+        width: 200px;
+        height: 200px;
+        left: 90px;
+        top: 370px;
+        font-size: 9rem;
+        z-index: 1;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .leftDiv{
+        left: 100px;
+        font-size: 5rem;
+        height: 150px;
+        width: 150px;
+        top: 245px;
+    }
+}
+
+.rightDiv {
+    height: 400px;
+    width: 400px;
+    background-image: linear-gradient(rgb(218, 255, 241), rgb(7, 140, 0));
+    border: #ffffff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    right: 70px;
+    align-items: center;
+    font-size: 10rem;
+    border-radius: 50%;
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .rightDiv{
+        height: 300px;
+        width: 300px;
+        font-size: 15rem;
+    }
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .rightDiv{
+        top: 120px;
+        left: 320px;
+        font-size: 12rem;
+    }
+}
+/*mbile size*/
+@media (max-width:500px){
+    .rightDiv{
+        left: 95px;
+        height: 200px;
+        width: 200px;
+        font-size: 9rem;
+        top: 80px;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .rightDiv{
+        left: 115px;
+        font-size: 5rem;
+        height: 120px;
+        width: 120px;
+        top: 65px;
+    }
+}
+
+.middleDiv {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    border-radius: 50%;
+}
+.middleDiv p{
+        font-size: 10rem;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #04e1ae;
+    text-shadow: 0px 10px 2px #ffffff; 
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .middleDiv p{
+        font-size: 6rem;
+    }
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .middleDiv{
+        top: 370px;
+        left: 370px;
+    }
+}
+/*mbile size*/
+@media (max-width:500px){
+    .middleDiv{
+        left: 140px;
+        top: 270px;
+        height: 100px;
+        width: 100px;
+    }
+    .middleDiv p{
+        font-size: 4rem;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .middleDiv{
+        left: 125px;
+        top: 155px;
+    }
+    .middleDiv p {
+        font-size: 3rem;
+    }
+}
+
+.lowerDiv {
+    height: 200px;
+    width: 90%;
+    position: absolute;
+    background-color: rgb(0, 255, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom : 20px;
+    background-color: rgb(0, 94, 255);
+    border: white;
+}
+/*laptop size*/
+@media(max-width:1450){
+    .lowerDiv{
+        bottom: 10px;
+    }
+}
+
+/*mbile size*/
+@media (max-width:500px){
+    .lowerDiv{
+        top: 37rem;
+        width: 95%;
+        height: 270px;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .lowerDiv{
+        height: 290px;
+        top: 410px;
+    }
+}
+
+.buttons {
+    border: solid 3px;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 66, 180);
+    animation: glow 1s infinite;
+    z-index: 1;
+    /* for adjust layer */
+}
+.buttonOne {
+left: 70px;
+transform: rotate(45deg);
+left: 50px;
+height: 40px;
+width: 40px;
+}
+.buttonOne p {
+    transform: rotate(-45deg);
+    margin: 10px;
+    }
+
+.buttonTwo {
+left: 185px;
+transform: rotate(45deg);
+height: 50px;
+width: 50px;
+}
+.buttonTwo p {
+    transform: rotate(-45deg);
+}
+
+.buttonThree {
+top: 70px;
+left: 320px;
+transform: rotate(45deg);
+height: 60px;
+width: 60px;
+padding: 15px;
+}
+.buttonThree p {
+    transform: rotate(-45deg);
+    margin-top: 20px;
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .buttonTwo{
+        left: 160px;
+    }
+    .buttonThree{
+        left: 280px;
+    }
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .buttonOne{
+        left: 20px;
+    }
+    .buttonTwo{
+        left: 120px;
+    }
+    .buttonThree{
+        left: 230px;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .buttonOne{
+        left: 10px;
+        top: 80px;
+        border-radius: 50%;
+    }
+    .buttonTwo{
+        left: 100px;
+        top: 80px;
+        height: 40px;
+        width: 60px;
+        border-radius: 50%;
+        transform: rotate(0deg);
+    }
+    .buttonTwo p{
+        transform: rotate(0deg);
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+    .buttonThree{
+        border-radius: 50%;
+        left: 200px;
+        width: 80px;
+        height: 40px;
+        transform: rotate(0deg);
+        top: 77px;
+    }
+    .buttonThree p{
+        transform: rotate(0deg);
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.scores{
+    background-color: rgb(0, 94, 255);
+    color: white;
+    border: white solid 3px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+.yourScore{
+    left: 70px;
+    top: 10px;
+    width: 25%;
+    padding: 10px;
+    font-weight: bolder;
+    padding: 0;
+    display: flex;
+}
+.yourScore p{
+    font-size: 30px;
+    margin: 0;
+    padding: 2px;
+    
+}
+/*tablet size*/
+@media (max-width:1100px){
+    .yourScore{
+        left: 40px;
+        font-size: 25px;
+        width: 35%;
+    }
+    .yourScore p {
+        padding: px;
+    }
+}
+/*mobile size*/
+@media (max-width:500px){
+    .yourScore p{
+        font-size: 20px;
+        width: 90%;
+    }
+    .yourScore{
+        width: 35%;
+        left: 5px;
+        text-align: center;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .yourScore{
+        top: 40px;
+        width: 90%;
+        left: 14px;
+    }
+}
+
+.computerScore{
+    right: 80px;
+    top: 20px;
+    width: 35%;
+    padding: 0px;
+    font-size: 2rem;
+    display: flex;
+}
+.computerScore p {
+    margin: 0;
+    padding: 2px;
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .computerScore{
+        font-size: 1.7rem;
+        width: 40%;
+    }
+}
+/*mobile size*/
+@media (max-width:500px){
+    .computerScore{
+        top: 5px;
+        right: 5px;
+        width: 55%;
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    } 
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .computerScore{
+        top: 4px;
+        width: 90%;
+        left: 14px;
+        font-size: 20px;
+        padding: 0;
+    }
+}
+
+.status{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 94, 255);
+    height: 90px;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border: white solid 5px;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    margin: 0;
+    border-radius: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*laptop size*/
+@media (max-width:1400px){
+    .status{
+        font-size: 3rem;
+    }
+}
+/*tablet size*/
+@media(max-width:1100px){
+.status{
+    width: 53%;
+}
+}
+
+/*mobile size*/
+@media (max-width:500px){
+    .status{
+        bottom: 5px;
+        height: 70px;
+        width: 90%;
+        left: 12px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+/*small size mobile*/
+@media(max-width:380px){
+    .status{
+        bottom: 80px;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+}
+
+.afterPress {
+    box-shadow: 0px 0px 20px 5px #089cc1;
+    
+  }
+.backLight{
+    box-shadow: 0px 0px 100px 20px #ffffff;
+}
+
+/* .leftSidePlayer{
+    transform: rotate(45deg);
+}
+.leftSideBox{
+    transform: rotate(90deg);
+}
+.computerBox{
+    transform: rotate(-90deg);
+}
+.rightScissors{
+    transform: rotate(90deg);
+} */
