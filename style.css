@@ -1,7 +1,8 @@
 body{
-    background-color: rgb(0, 94, 255);
+    background-image: linear-gradient(rgb(170, 197, 255), rgb(3, 7, 88), rgb(0, 0, 0));
     display: flex;
     justify-content: center;
+    height: auto;
 }
 @keyframes glow {
     0% {
@@ -19,7 +20,7 @@ body{
 }
 
 .mainDiv {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -43,7 +44,7 @@ body{
 /*small size mobile*/
 @media(max-width:380px){
     .mainDiv{
-        height: 82vh;
+        height: 95vh;
     }
 }
 
@@ -265,7 +266,7 @@ body{
     justify-content: center;
     align-items: center;
     bottom : 20px;
-    background-color: rgb(0, 94, 255);
+    background-image: linear-gradient(rgb(170, 197, 255), rgb(3, 7, 88), rgb(0, 0, 0));
     border: white;
 }
 /*laptop size*/
@@ -286,7 +287,7 @@ body{
 /*small size mobile*/
 @media(max-width:380px){
     .lowerDiv{
-        height: 290px;
+        height: 200px;
         top: 410px;
     }
 }
@@ -546,7 +547,7 @@ padding: 15px;
 /*small size mobile*/
 @media(max-width:380px){
     .status{
-        bottom: 80px;
+        bottom: 5px;
         font-size: 30px;
         display: flex;
         align-items: center;
